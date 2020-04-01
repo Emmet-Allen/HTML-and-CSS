@@ -1,28 +1,70 @@
 <DOCTYPE! html>
 <html>
-
 	<head>
-		<title>Emmet Allen</title>
+	<style>
+	
+		.image-size{
+		width: 400px;
+		}
+ 
+		.solid-thick-border{
+		border-color: blue;
+		border-size: 10px;
+		border-style: solid;
+		}
+
+		h1{
+		font-family: Times New Roman;
+		font-size: 100px;
+		}
+		
+		.headers{
+		font-family: Times New Roman;
+		font-size: 50px;
+		}
+		
+		p{
+		font-family: Times New Roman;
+		font-size: 25px;
+		}
+		
+		ul{
+		font-family: Times New Roman;
+		font-size: 25px;
+		}
+		
+		label{
+		font-family: Times New Roman;
+		font-size: 25px;
+		}
+		
+		input{
+		length= 30px;
+		width= 30px;
+		}
+		
+	</style>
 	</head>
 
 	<body>
-		<h1> Emmet Allen </h1>
+		<title>Emmet Allen</title>
 	<div>
+		<h1>Emmet Allen</h1>
 	</div>
-		<h2> Bio </h2>
+		<h2 class="headers"> Bio </h2>
 	<div>
-		<p> Hi, I'm  Emmet. I'm testing out my HTML know how to create some what of a webpage.
-		<strong>Please</strong> feel free to let me know what I can do to better my coding skills.
+		<p> Hi, I'm  Emmet. I'm testing out my HTML know how to create some what of a webpage.<br>
+		<strong>Please</strong> feel free to let me know what I can do to better my coding skills.<br>
 		It's my first time in something that I have wanted to do for a long time, but also a step into
 		a new carrer path.
 			</p>
 	</div>
-		<h3> Cobalt </h3>
+		<h3 class="headers"> Cobalt </h3>
 	<div>
 		<p> Here is a picture of my French Bulldog, Cobalt. </p>
-		<img src="C:\Users\Emmet\Desktop\New folder\MVIMG_20190927_212510.jpg" alt="Cobalt eating yogurt."/>
+		<img class="image-size solid-thick-border" src="C:\Users\Emmet\Desktop\New folder\MVIMG_20190927_212510.jpg" alt="Cobalt eating yogurt."/>
 	</div>
-		<h4> Hobbies </h4>
+		<h4 class="headers"> Hobbies </h4>
 	<div>
 		<ul>
 		<li>Martial Arts</li>
@@ -32,6 +74,7 @@
 		<li>Listening to Podcast</li>
 		</ul>
 	<div>
+		<h4 class="headers"> Suggestions </h4>
 		<label for="Suggestions">
 		<input type="text" placeholder="You can improve by...">
 		</label>
@@ -50,11 +93,11 @@
 		</label>
 	</div>
 	</div>
-		<h5> Thank You </h5>
+		<h5 class="headers"> Thank You </h5>
 	<div>
 		<video src="https://www.youtube.com/watch?v=XE04xWTqMjg" height="240" width="320" controls>
 		Led Zepplin: Thank You
 		</video>
 	</div>
-</body>
+	</body>
 </html>
