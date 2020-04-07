@@ -1,40 +1,166 @@
-<DOCTYPE html>
+<DOCTYPE! html>
 <html>
+	<head>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+	<style>
+	
+	:root{
+	--font-family:"Dosis", Times New Roman;
+	--main-alignment: Center;
+	--small-font: 25px;
+	--med-font: 50px;
+	--large-font: 100px;
+	}
+	
+		.image-size{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 300px;
+		}
+		
+		.emmet-image{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 500px;
+		}
+		
+		.emmet-image .image-bottom{
+		display: none;
+		margin-left: auto;
+		margin-right: auto;
+		}
+		
+		.emmet-image:hover .image-bottom{
+		display: block;
+		position: fixed;
+		bottom: 400px;
+		}
+ 
+		.cobalt-border{
+		border-color: #0047ab;
+		border-size: 20px;
+		border-style: solid;
+		}
+		
+		.rotate{
+		transform: rotate(90deg);
+		}
+		
+		h1{
+		font-family: var(--font-family);
+		font-size: var(--large-font);
+		text-align: var(--main-alignment);
+		}
+		
+		.headers{
+		font-family: var(--font-family);
+		font-size: var(--med-font);
+		text-align: var(--main-alignment);
+		}
+		
+		p{
+		font-family: var(--font-family);
+		font-size: var(--small-font);
+		text-align: var(--main-alignment);
+		}
+		
+		.hobbies{
+		font-family: var(--font-family);
+		font-size: var(--small-font);
+		text-align: var(--main-alignment);
+		display: table-cell;
+		vertical-align: middle;
+		}
+		
+		
+		label{
+		font-family: var(--font-family);
+		font-size: var(--small-font);
+		text-align: var(--main-alignment);
+		}
+		
+		input[type=text]{
+		width: 100%;
+		padding: 20px 5px;
+		margin: 10px 0;
+		box-sizing: border-box;
+		background-color: rgba(45, 45, 45, 0.10);
+		}
+		
 
-<head>
+	</style>
+	</head>
 
-<body>
-<h1> Emmet Allen </h1>
-	<div>
-	</div>
-		<h2> Bio </h2>
-		<div>
-			<p> Hi, I'm  Emmet. I'm testing out my HTML know how to create some what of a webpage.
-			<strong>Please</strong> feel free to let me know what I can do to better my coding skills.
-			It's my first time in something that I have wanted to do for a long time, but also a step into
-			a new carrer path.
-			</p>
+	<body>
+		<title>Emmet Allen</title>
+	
+		<h1><u>Emmet Allen</u></h1>
+		<p>Email: Emmet.Allen@gmail.com<br>
+		GitHub: MrSkillful<br>
+		Instagram: emmet_flavored_cupcake</p>
+		
+		<br>
+		<br>
+		<br>
+		
+		<div class="emmet-image" title="Don't take my identity please.">
+		<img class="emmet-image cobalt-border rotate" id="Emmet_Picture" src="C:\Users\Emmet\Desktop\Web Images\Actual_Me.jpg">
+		<img class="emmet-image cobalt-border image-bottom" id="Animated_Picture" src="C:\Users\Emmet\Desktop\Web Images\Animated_Me.jpg">
 		</div>
-				<h3> Cobalt </h3>
-			<div>
-					<span> Here is a picture of my French Bulldog, Cobalt. </span>
-					<img src="C:\Users\Emmet\Desktop\New folder\MVIMG_20190927_212510.jpg" alt="Cobalt eating yogurt."/>
-			</div>
-						<h4> Hobbies </h4>
-						<div>
-					<ul>
-					<li>Martial Arts</li>
-					<li>Traveling</li>
-					<li>Playing video games</li>
-					<li>Reading Books</li>
-					<li>Listening to Podcast</li>
-					</ul>
-						</div>
-							<h5> Thank You </h5>
-						<div>
-						<video src="https://www.youtube.com/watch?v=XE04xWTqMjg" height="240" width="320" controls>
-						Led Zepplin: Thank You
-						</video>
-</body>
-</head>
+		
+		
+		<br>
+		
+		<h2 class="headers"><u> Bio </u></h2>
+
+		<p> Hi, I'm  Emmet. I'm testing out my Web Design know how to create some what of a webpage.<br>
+		<strong>Please</strong> feel free to let me know what I can do to better my coding skills.<br>
+		It's my first time in something that I have wanted to do for a long time, but also a step towards
+		a new carrer path.
+			</p>
+
+		<h3 class="headers"><u>Cobalt</u></h3>
+
+		<p> Here is a picture of my French Bulldog, Cobalt. <br>
+			He loves greek yogurt, sleeping, and farting.</p>
+		
+	<div title="Cobalt eating yogurt">
+		<img class="image-size cobalt-border" id="Cobalt" src="C:\Users\Emmet\Desktop\Web Images\MVIMG_20190927_212510.jpg" alt="Cobalt eating yogurt."/>
+	</div>
+	
+		<h4 class="headers"><u>Hobbies</u></h4>
+
+		<ul class="hobbies">
+		<li>Martial Arts</li>
+		<li>Traveling</li>
+		<li>Playing video games</li>
+		<li>Reading Books</li>
+		<li>Listening to Podcast</li>
+		</ul>
+
+		<h4 class="headers"><u>Suggestions</u></h4>
+		<label for="Suggestions">
+		<input type="text" class="input-box" placeholder="You can improve by...">
+		</label>
+		
+		<h5 class="headers">I think your website is...</h5>
+		<label for="Great">
+		<input id="Great" value= "great" type="radio" name="rating">
+		Great
+		</label>
+		<label for="Good">
+		<input id="Good" value="good" type="radio" name="rating">
+		Good
+		</label>
+		<label for="Bad">
+		<input id="Bad" value="bad" type="radio"  name="rating">
+		Bad
+		</label>
+	
+		<h5 class="headers"><u>Thank You</u></h5>
+
+
+	</body>
 </html>
