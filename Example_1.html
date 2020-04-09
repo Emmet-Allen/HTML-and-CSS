@@ -12,6 +12,20 @@
 	--large-font: 100px;
 	}
 	
+		body{
+		background-color: rgba(51, 119, 255, 0.5);
+		background-image:url(C:/Users/Emmet/Desktop/Web Image/Background_Image.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		}
+	
+		a{
+		display:block;
+		text-align:center;
+		text-color:#0047ab;
+		}
+		
 		.image-size{
 		display: block;
 		margin-left: auto;
@@ -60,18 +74,11 @@
 		text-align: var(--main-alignment);
 		}
 		
-		p{
+
+		.small-font{
 		font-family: var(--font-family);
 		font-size: var(--small-font);
 		text-align: var(--main-alignment);
-		}
-		
-		.hobbies{
-		font-family: var(--font-family);
-		font-size: var(--small-font);
-		text-align: var(--main-alignment);
-		display: table-cell;
-		vertical-align: middle;
 		}
 		
 		
@@ -89,18 +96,39 @@
 		background-color: rgba(45, 45, 45, 0.10);
 		}
 		
+		.list-align{
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		}
+		
+		li{
+		vertical-height:100px;
+		}
+		
+
+
 
 	</style>
 	</head>
 
 	<body>
+	<div class="background">
 		<title>Emmet Allen</title>
 	
 		<h1><u>Emmet Allen</u></h1>
-		<p>Email: Emmet.Allen@gmail.com<br>
-		GitHub: MrSkillful<br>
-		Instagram: emmet_flavored_cupcake</p>
 		
+		
+		<a href="mailto:emmet.allen@gmail.com" target="_blank"  class="small-font" subject="I saw your website and wanted to reach out to you">
+			Email: Emmet.Allen@gmail.com</a><br>
+		<a href="https://github.com/Mrskillful" target="_blank" class="small-font"> 
+			GitHub: MrSkillful </a><br>
+		<a href="https://www.instagram.com/emmet_flavored_cupcake/" target="_blank"  class="small-font"> 
+			Instagram: emmet_flavored_cupcake</a>
+	
+		
+		<br>
+		<br>
 		<br>
 		<br>
 		<br>
@@ -110,12 +138,13 @@
 		<img class="emmet-image cobalt-border image-bottom" id="Animated_Picture" src="C:\Users\Emmet\Desktop\Web Images\Animated_Me.jpg">
 		</div>
 		
-		
+		<br>
+		<br>
 		<br>
 		
 		<h2 class="headers"><u> Bio </u></h2>
 
-		<p> Hi, I'm  Emmet. I'm testing out my Web Design know how to create some what of a webpage.<br>
+		<p class="small-font"> Hi, I'm  Emmet. I'm testing out my Web Design know how to create some what of a webpage.<br>
 		<strong>Please</strong> feel free to let me know what I can do to better my coding skills.<br>
 		It's my first time in something that I have wanted to do for a long time, but also a step towards
 		a new carrer path.
@@ -123,7 +152,7 @@
 
 		<h3 class="headers"><u>Cobalt</u></h3>
 
-		<p> Here is a picture of my French Bulldog, Cobalt. <br>
+		<p class="small-font"> Here is a picture of my French Bulldog, Cobalt. <br>
 			He loves greek yogurt, sleeping, and farting.</p>
 		
 	<div title="Cobalt eating yogurt">
@@ -132,20 +161,24 @@
 	
 		<h4 class="headers"><u>Hobbies</u></h4>
 
-		<ul class="hobbies">
+	<div class="list-align">
+		<ul class="small-font">
 		<li>Martial Arts</li>
 		<li>Traveling</li>
 		<li>Playing video games</li>
 		<li>Reading Books</li>
 		<li>Listening to Podcast</li>
 		</ul>
-
+	</div>
+	
 		<h4 class="headers"><u>Suggestions</u></h4>
 		<label for="Suggestions">
 		<input type="text" class="input-box" placeholder="You can improve by...">
 		</label>
 		
-		<h5 class="headers">I think your website is...</h5>
+		<h5 class="headers"><u>I think your website is...</u></h5>
+		
+	<div class="list-align">
 		<label for="Great">
 		<input id="Great" value= "great" type="radio" name="rating">
 		Great
@@ -158,9 +191,14 @@
 		<input id="Bad" value="bad" type="radio"  name="rating">
 		Bad
 		</label>
+		<label for="Trash">
+		<input id="Trash" value="trash" type="radio"  name="rating">
+		Trash
+		</label>
+	</div>
 	
 		<h5 class="headers"><u>Thank You</u></h5>
 
-
+	</div>
 	</body>
 </html>
