@@ -1,54 +1,88 @@
 <!DOCTYPE HTML>
-<html>
+<html lang=en>
 
-  <head>
-    <style>
-      <!-- Add CSS Here
-      -->
-    </style>
-  </head>
+<head>
+  <style>
+    <!-- Add CSS Here
+    -->
+    
+    textarea {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  
+}
 
-  <body>
+.inputs{
+  display: block;
+  width 20%;
+}
+  
+  </style>
+</head>
 
-    <title id="title"> Personality Survey</title>
+<body>
 
-    <p id=description>
-      Take a quick personality survey to find out your Myers-Briggs Personality Type.
-      <hr>
-    </p>
+  <title>
+    <h1> Personality Survey</h1>
+  </title>
+  <header>
+    <h1 id="title">
+      Myers-Briggs Personality Type
+    </h1>
+  </header>
+  <p id=description>
+    Take a quick personality survey to find out your Myers-Briggs Personality Type.
+    <hr>
+  </p>
 
-    <div>
-      <form id="survey-form">
+  <div>
+    <form id="survey-form">
 
-        <label for="name-label" id="name-label">
-          <input type="text" id="name" required>
-          What is Your Name?
+      <label for="name" id="name-label">
+        What is Your Name?
+      </label>
+      <input class="inputs" type="text" id="name" placeholder="Name" required>
+
+      <label for="email-label" id="email-label">
+        What is Your Email?
+      </label>
+      <input class="inputs" type="email" id="email" placeholder="Email" required>
+
+      <div tabindex="1" id="birthday">
+        <label for="birthdate" id="date">
+          What is Your Birthday?
         </label>
+        <input type="date" class="inputs" onfocus="(this.type='date')" required>
 
+      </div>
 
-
-        <label for="email-label" id="email-label">
-          <input type="text" id="email" required>
-          What is Your Email?
+      <div tabindex="1" id="age">
+        <label for="age" id="number-label">
+          How old are you?
         </label>
+        <input class="inputs" type="number" id="number" placeholder="18" min="13" max="99" required>
 
-
-
-        <div tabindex="1" id="dropdown">
-          <label for="age-label" id="number-label">
-            <input type="date" id="number" required>
-            What is Your Birthday?
+        <div>
+          <label for="gender">
+            What do you identify as?
           </label>
+          <select class="inputs" id="dropdown" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="N/A">I don't want to disclose</option>
+
         </div>
 
         <br>
 
-        <fieldset id="Question">
+        <fieldset class="questions" id="Question">
           <legend>
             1. How often do you think about the future?
           </legend>
-          <div>
-
+          <div class="questions">
 
             <label for="Very Often">
               <input type="radio" id="Very Often" value="Very Often" name="Question"> Very Often
@@ -68,7 +102,7 @@
           </div>
         </fieldset>
 
-        <fieldset id="Question2">
+        <fieldset class="questions" id="Question2">
           <legend>
             2. How often do you start a task as soon as you asign it?
           </legend>
@@ -156,24 +190,59 @@
           </label>
         </fieldset>
 
-        <hr>
+        <div>
 
-        <button type="submit" id="submit-button" target="_blank">
+          <fieldset id="Question6">
+
+            <legend for="Descriptives">
+              6. Choose words to describe yourself:
+            </legend>
+
+            <label for="Quirky">
+              <input type="checkbox" id="Quirky" value="Quirky" name="Descriptives">
+              Quirky
+            </label>
+
+            <label for="Smooth">
+              <input type="checkbox" id="Smooth" value="Smooth" name="Descriptives">
+              Smooth
+            </label>
+
+            <label for="Cold">
+              <input type="checkbox" id="Cold" value="Cold" name="Descriptives">
+              Cold
+            </label>
+
+            <label for="Outgoing">
+              <input type="checkbox" id="Outgoing" value="Outgoing" name="Descriptives">
+              Outgoing
+            </label>
+
+            <label for="Mysterious">
+              <input type="checkbox" id="Mysterious" value="Mysterious" name="Descriptives">
+              Mysterious
+            </label>
+
+          </fieldset>
+
+          <fieldset id="Question7">
+
+            <legend for="FreeResponse">7. How would you describe yourself?</legend>
+
+            <textarea id="FreeResponse" name="FreeResponse"> </textarea>
+          </fieldset>
+
+        </div>
+
+        <button type="submit" id="submit" target="_blank">
           Click Here When Finished
         </button>
-      </form>
-    </div>
+    </form>
+  </div>
 
+  <br>
+  <footer> &copy Emmet Allen</footer>
 
-
-
-
-
-
-
-
-
-
-  </body>
+</body>
 
 </html>
