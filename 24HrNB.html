@@ -1,22 +1,30 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
 
-    <!-- Font Links -->
+  <!-- Font Links -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:ital@1&display=swap" rel="stylesheet">
 
-    <!-- Background Link -->
+  <!-- Background Link -->
 
-
-
-
-    <style>
-      <!-- Add CSS Style Here 
-      -->
-
-      :root {
+  <style>
+    <!-- Add CSS Style Here 
+    -->
+    
+    :root {
   --smallfont: 25px;
   --medfont: 50px;
   --largefont: 100px;
@@ -62,7 +70,7 @@ body {
   width: 300px;
 }
 
-.menu {
+.nav-link {
   font-size: var(--smallfont);
   font-style: var(--font-body);
 }
@@ -122,198 +130,143 @@ button{
   margin-right: auto;
 }
 
-      
-    </style>
 
-  </head>
+  </style>
 
+</head>
 
-  <body>
+<body>
 
-    <title id="title"> The 24-Hour Notebook </title>
-    
-    <br>
-    <br>
+  <title id="title"> The 24-Hour Notebook </title>
 
-    <header id="header">
-      <img id="header-img" src="https://cdn0.iconfinder.com/data/icons/computer-networking-2-1/66/107-512.png" alt="company logo" class="images">
-      <h1 id="Title" class="main-head">
-        The 24-Hour Notebook
-      </h1>
-      <p id="Catchline" class="sub-head">
+  <br>
+  <br>
+
+  <header id="header">
+    <img id="header-img" src="https://cdn0.iconfinder.com/data/icons/computer-networking-2-1/66/107-512.png" alt="company logo" class="images">
+    <h1 id="Title" class="main-head">
+      The 24-Hour Notebook
+    </h1>
+    <p id="Catchline" class="sub-head">
       Give it a day and it'll go away!
-      </p>
+    </p>
 
-      <nav id="navbar" class="navbar sticky">
+    <nav id="nav-bar" class="navbar sticky">
 
-        <a id="navlinK" class="menu" href="#Description">Description</a>
-        <a id="navlinK" class="menu" href="#Design">Design</a>
-        <a id="navlinK" class="menu" href="#Instructions">Instructions</a>
-        <a id="navlinK" class="menu" href="#Sizes">Sizes</a>
-        <a id="navlinK" class="menu" href="#Purchase">Purchase</a>
-      </nav>
+      <a id="nav-linK" class="nav-link" href="#Description">Description</a>
+      <a id="nav-linK" class="nav-link" href="#Design">Design</a>
+      <a id="nav-linK" class="menu" href="#Instructions">Instructions</a>
+      <a id="nav-linK" class="nav-link" href="#Sizes">Sizes</a>
+      <a id="nav-linK" class="nav-link" href="#Purchase">Purchase</a>
+    </nav>
 
+  </header>
 
-    </header>
+  <hr>
+  <br>
 
-    <hr>
+  <div id="Description">
+
+    <h2 class="sub-head">
+      The 24-Hour Notebook
+    </h2>
+
+    <p class="regtext">
+      Using patent technology designed by scientist in NASA, the 24-Hour Notebook
+      is used to share any document and distribute information with the gurantee
+      that the information will only be stored for 24-Hours after its first use.
+    </p>
+
+    <center><iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/mB1nAzriqRQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
+  </div>
+
+  <br>
+  <br>
+
+  <div id="Design">
+
+    <h2 class="sub-head">
+      Design
+    </h2>
+
+    <p class="regtext">
+      The 24-Hour Notebook is designed with a sleek stainless steel coat, and an
+      internal flash drive that is rigged so that all of its content will be first encrypted
+      then deleted within after 24 hours of use.
+    </p>
+  </div>
+
+  <br>
+  <br>
+
+  <div id="Instructions">
+
+    <h2 class="sub-head">
+      Instructions
+    </h2>
+
+    <p class="regtext">
+      Following the inital prompt instructions, set a unique username and password this
+      will then set a 24-Hour timer within the notebooks internal-drive. After the intial
+      set up,you are able to store any type of file medium within the 24-Hour Notebook upto the
+      limitations of the devices flashdrive space. Once the 24-Hour timer goes off in the notebook, the
+      drive will encrypt all information and wipe all content from the drive.
+    </p>
+  </div>
+
+  <br>
+  <br>
+
+  <div id="Sizes">
+
+    <h2 class="sub-head">
+      Sizes
+    </h2>
+
+    <p class="regtext">
+      The 24-Hour Notebook comes in sizes spanning from 2GBs upto 64GBs. For more space
+      users can order the 24-Hour Notebook XL, a 1TB external hard-drive that uses an advanced
+      version of the 24-Hour Notebooks memory wiping capabiliaties
+    </p>
+
+  </div>
+
+  <br>
+  <br>
+
+  <div id="Purchase">
+
+    <h2 class="sub-head">
+      Purchase Here
+    </h2>
+
+    <img class="images" src="https://cdn.shopify.com/s/files/1/0389/6629/products/USB3_1024x1024.jpg?v=1559858027" alt="24-Hour Flashdrive" name="Flashdrive" title="24-Hour Notebook Flashdrive">
+    <p class="regtext"><a class="purchase" href="#">24-Hour Notebook Flashdrive Edition</a></p>
+
+    <img class="images" src="https://cdn.shopify.com/s/files/1/0602/6521/products/usb-3.0-stainless-steel-body-external-hard-disk-drive-1tb.jpg?v=1571438749" name="External Hard-Drive" title="24-Hour Notebook: External Hard-Drive Edition">
     <br>
+    <p class="regtext"><a class="purchase" href="#">24-Hour Notebook: External Hard-Drive Edition</a></p>
 
-    <div id="Description">
-
-      <h2 class="sub-head" >
-        The 24-Hour Notebook
-      </h2>
+    <form id="form" action="" https://www.freecodecamp.com/email-submit"">
 
       <p class="regtext">
-        Using patent technology designed by scientist in NASA, the 24-Hour Notebook
-        is used to share any document and distribute information with the gurantee
-        that the information will only be stored for 24-Hours after its first use.
+        Join the waitlist with your email for more information on upcoming products.
       </p>
-      
-      <center><iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/mB1nAzriqRQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-
-    </div>
-
-    <br>
-    <br>
-
-    <div id="Design">
-
-      <h2 class="sub-head">
-        Design
-      </h2>
-
-      <p class="regtext">
-        The 24-Hour Notebook is designed with a sleek stainless steel coat, and an
-        internal flash drive that is rigged so that all of its content will be first encrypted
-        then deleted within after 24 hours of use.
-      </p>
-    </div>
-
-    <br>
-    <br>
-
-    <div id="Instructions">
-
-      <h2 class="sub-head">
-        Instructions
-      </h2>
-
-      <p class="regtext">
-        Following the inital prompt instructions, set a unique username and password this
-        will then set a 24-Hour timer within the notebooks internal-drive. After the intial
-        set up,you are able to store any type of file medium within the 24-Hour Notebook upto the
-        limitations of the devices flashdrive space. Once the 24-Hour timer goes off in the notebook, the
-        drive will encrypt all information and wipe all content from the drive.
-      </p>
-    </div>
-
-    <br>
-    <br>
-
-    <div id="Sizes">
-
-
-      <h2 class="sub-head">
-        Sizes
-      </h2>
-
-      <p class="regtext">
-        The 24-Hour Notebook comes in sizes spanning from 2GBs upto 64GBs. For more space
-        users can order the 24-Hour Notebook XL, a 1TB external hard-drive that uses an advanced
-        version of the 24-Hour Notebooks memory wiping capabiliaties
-      </p>
-
-    </div>
-
-<br>
-<br>
-
-    <div id="Purchase">
-
-      <h2 class="sub-head">
-        Purchase Here
-      </h2>
-      
-    
-
-
-
-      <img class="images" src="https://cdn.shopify.com/s/files/1/0389/6629/products/USB3_1024x1024.jpg?v=1559858027" alt="24-Hour Flashdrive" name="Flashdrive" title="24-Hour Notebook Flashdrive">
-      <p class="regtext"><a class="purchase" href="#">24-Hour Notebook Flashdrive Edition</a></p>
-
-      <img class="images" src="https://cdn.shopify.com/s/files/1/0602/6521/products/usb-3.0-stainless-steel-body-external-hard-disk-drive-1tb.jpg?v=1571438749" name="External Hard-Drive" title="24-Hour Notebook: External Hard-Drive Edition">
-      <br>
-      <p class="regtext"><a class="purchase" href="#">24-Hour Notebook: External Hard-Drive Edition</a></p>
-      
-        <form>
-      
-      <p class="regtext">
-      Join the waitlist with your email for more information on upcoming products.
-      </p>
-      <input type="email" id="email" class="regtext" placeholder="Your Email" required>
-      <button type="submit" id="submit" target=" https://www.freecodecamp.com/email-submit">
+      <input type="email" id="email" class="regtext" name="email" placeholder="Your Email" required>
+      <input type="submit" id="submit" value="submit" name="submit" target=" https://www.freecodecamp.com/email-submit">
       Thank you!
-      </button>
-      </form>
+      </input>
+    </form>
 
-    </div>
+  </div>
 
+  <br>
+  <br>
 
+</body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br>
-<br>
-
-  </body>
-
-  <footer><a href="#header">Back To Top</a>
+<footer><a href="#header">Back To Top</a>
   <br>&copy Emmet Allen</footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
-
-
- 
