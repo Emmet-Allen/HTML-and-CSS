@@ -15,74 +15,114 @@
     <style>
       <!-- Add CSS Style Here 
       -->
-      
-      :root{
+
+      :root {
   --smallfont: 25px;
   --medfont: 50px;
   --largefont: 100px;
   --font-header: 'Oswald', sans-serif;
   --font-body: 'Raleway', sans-serif;
 
-  }
-  
-  body{
-    background-color: rgba(191, 191, 191);
-  }
-  
-  .main-head{
-    font-size: var(--largefont);
-    font-style: var(--font-header);
-    text-align: center;
-  }
-  
-  .sub-head{
-    font-size: var(--medfont);
-    font-style: var(--font-header);
-    text-align: center;
-  }
-  
-  .regtext{
-    font-size: var(--smallfont);
-    font-style: var(--font-body);
-    text-align: center;
-  }
-  
-  .images{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-  }
-  
-  .menu{
-    font-size: var(--smallfont);
-    font-style: var(--font-body);
-  }
-  
-  .navbar{
-    width: 100%;
-    background-color: #EFEFEF;
-    overflow: auto;
-  }
-  
-  .navbar a{
-    float: left;
-    padding: 12px;
-    width: 17%;
-    text-align: center;
-    color: #8c8c8c;
-  }
-  
-  .navbar a:hover{
-    color: #000;
-  } 
-  
-  div{
-    border: 2px solid;
-    padding: 10px;
-    box-shadow: 10px 20px;
-  }
+}
 
+@media only screen and (max-width: 600px){
+  body{
+background-color: #737373;
+    }
+   }
+
+body {
+  background-color: rgba(191, 191, 191);
+}
+
+.main-head {
+  font-size: var(--largefont);
+  font-style: var(--font-header);
+  text-align: center;
+  text-decoration: underline;
+}
+
+.sub-head {
+  font-size: var(--medfont);
+  font-style: var(--font-header);
+  text-align: center;
+  text-decoration: underline;
+}
+
+.regtext {
+  font-size: var(--smallfont);
+  font-style: var(--font-body);
+  text-align: center;
+}
+
+.images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+.menu {
+  font-size: var(--smallfont);
+  font-style: var(--font-body);
+}
+
+.navbar {
+  width: 100%;
+  background-color: #EFEFEF;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  width: 17%;
+  text-align: center;
+  color: #8c8c8c;
+}
+
+.navbar a:hover {
+  color: #000;
+}
+
+.purchase{
+  background-color: #EFEFEF;
+  float: center;
+  padding: 12px;
+  width: 17%;
+  text-align: center;
+  color: #8c8c8c;
+}
+
+.purchase:hover{
+  color: #000;
+}
+
+
+div {
+  border: 2px solid;
+  padding: 10px;
+  box-shadow: 10px 20px;
+}
+
+input{
+  display: block;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button{
+  display: block;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+      
     </style>
 
   </head>
@@ -91,6 +131,9 @@
   <body>
 
     <title id="title"> The 24-Hour Notebook </title>
+    
+    <br>
+    <br>
 
     <header id="header">
       <img id="header-img" src="https://cdn0.iconfinder.com/data/icons/computer-networking-2-1/66/107-512.png" alt="company logo" class="images">
@@ -98,16 +141,16 @@
         The 24-Hour Notebook
       </h1>
       <p id="Catchline" class="sub-head">
-        Give it a day and it'll go away!
+      Give it a day and it'll go away!
       </p>
 
-      <nav class="navbar">
+      <nav id="navbar" class="navbar sticky">
 
-        <a class="menu" href="#Description">Description</a>
-        <a class="menu" href="#Design">Design</a>
-        <a class="menu" href="#Instructions">Instructions</a>
-        <a class="menu" href="#Sizes">Sizes</a>
-        <a class="menu" href="#Purchase">Purchase</a>
+        <a id="navlinK" class="menu" href="#Description">Description</a>
+        <a id="navlinK" class="menu" href="#Design">Design</a>
+        <a id="navlinK" class="menu" href="#Instructions">Instructions</a>
+        <a id="navlinK" class="menu" href="#Sizes">Sizes</a>
+        <a id="navlinK" class="menu" href="#Purchase">Purchase</a>
       </nav>
 
 
@@ -116,9 +159,9 @@
     <hr>
     <br>
 
-    <div>
+    <div id="Description">
 
-      <h2 class="sub-head" id="Description">
+      <h2 class="sub-head" >
         The 24-Hour Notebook
       </h2>
 
@@ -127,15 +170,17 @@
         is used to share any document and distribute information with the gurantee
         that the information will only be stored for 24-Hours after its first use.
       </p>
+      
+      <center><iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/mB1nAzriqRQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 
     </div>
 
     <br>
     <br>
 
-    <div>
+    <div id="Design">
 
-      <h2 class="sub-head" id="Design">
+      <h2 class="sub-head">
         Design
       </h2>
 
@@ -149,9 +194,9 @@
     <br>
     <br>
 
-    <div>
+    <div id="Instructions">
 
-      <h2 class="sub-head" id="Instructions">
+      <h2 class="sub-head">
         Instructions
       </h2>
 
@@ -167,10 +212,10 @@
     <br>
     <br>
 
-    <div>
+    <div id="Sizes">
 
 
-      <h2 class="sub-head" id="Sizes">
+      <h2 class="sub-head">
         Sizes
       </h2>
 
@@ -185,20 +230,33 @@
 <br>
 <br>
 
-    <div>
+    <div id="Purchase">
 
-      <h2 class="sub-head" id="Purchase">
+      <h2 class="sub-head">
         Purchase Here
       </h2>
+      
+    
 
 
 
       <img class="images" src="https://cdn.shopify.com/s/files/1/0389/6629/products/USB3_1024x1024.jpg?v=1559858027" alt="24-Hour Flashdrive" name="Flashdrive" title="24-Hour Notebook Flashdrive">
-      <p class="regtext">24-Hour Notebook Flashdrive Edition</p>
+      <p class="regtext"><a class="purchase" href="#">24-Hour Notebook Flashdrive Edition</a></p>
 
       <img class="images" src="https://cdn.shopify.com/s/files/1/0602/6521/products/usb-3.0-stainless-steel-body-external-hard-disk-drive-1tb.jpg?v=1571438749" name="External Hard-Drive" title="24-Hour Notebook: External Hard-Drive Edition">
       <br>
-      <p class="regtext">24-Hour Notebook: External Hard-Drive Edition</p>
+      <p class="regtext"><a class="purchase" href="#">24-Hour Notebook: External Hard-Drive Edition</a></p>
+      
+        <form>
+      
+      <p class="regtext">
+      Join the waitlist with your email for more information on upcoming products.
+      </p>
+      <input type="email" id="email" class="regtext" placeholder="Your Email" required>
+      <button type="submit" id="submit" target=" https://www.freecodecamp.com/email-submit">
+      Thank you!
+      </button>
+      </form>
 
     </div>
 
@@ -256,3 +314,6 @@
 
 
 </html>
+
+
+ 
