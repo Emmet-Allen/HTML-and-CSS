@@ -22,11 +22,11 @@
 
 }
 
-@media only screen and (max-width: 600px){
-  body{
-background-color: #737373;
-    }
-   }
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #737373;
+  }
+}
 
 body {
   background-color: rgba(191, 191, 191);
@@ -85,7 +85,7 @@ body {
   color: #000;
 }
 
-.purchase{
+.purchase {
   background-color: #EFEFEF;
   float: center;
   padding: 12px;
@@ -94,29 +94,36 @@ body {
   color: #8c8c8c;
 }
 
-.purchase:hover{
+.purchase:hover {
   color: #000;
 }
 
 
-div {
+.boxshadow {
   border: 2px solid;
   padding: 10px;
   box-shadow: 10px 20px;
 }
 
-input{
+input {
   display: block;
   width: 25%;
   margin-left: auto;
   margin-right: auto;
 }
 
-button{
+button {
   display: block;
   width: 20%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 
@@ -154,7 +161,7 @@ button{
   <hr>
   <br>
 
-  <div id="Description">
+  <div class="boxshadow" id="Description">
 
     <h2 class="sub-head">
       The 24-Hour Notebook
@@ -173,7 +180,7 @@ button{
   <br>
   <br>
 
-  <div id="Design">
+  <div class="boxshadow"  id="Design">
 
     <h2 class="sub-head">
       Design
@@ -189,7 +196,7 @@ button{
   <br>
   <br>
 
-  <div id="Instructions">
+  <div class="boxshadow"  id="Instructions">
 
     <h2 class="sub-head">
       Instructions
@@ -207,7 +214,7 @@ button{
   <br>
   <br>
 
-  <div id="Sizes">
+  <div class="boxshadow"  id="Sizes">
 
     <h2 class="sub-head">
       Sizes
@@ -224,28 +231,51 @@ button{
   <br>
   <br>
 
-  <div id="Purchase">
+  <div class="boxshadow"  id="Purchase">
 
     <h2 class="sub-head">
       Purchase Here
     </h2>
 
-    <img class="images" src="https://cdn.shopify.com/s/files/1/0389/6629/products/USB3_1024x1024.jpg?v=1559858027" alt="24-Hour Flashdrive" name="Flashdrive" title="24-Hour Notebook Flashdrive">
-    <p class="regtext"><a class="purchase" href="#">24-Hour Notebook Flashdrive Edition</a></p>
-
-    <img class="images" src="https://cdn.shopify.com/s/files/1/0602/6521/products/usb-3.0-stainless-steel-body-external-hard-disk-drive-1tb.jpg?v=1571438749" name="External Hard-Drive" title="24-Hour Notebook: External Hard-Drive Edition">
+    
+    <div class="flex-container">
+      
+      <div class="boxshadow"> <img class="images" src="https://cdn.shopify.com/s/files/1/0389/6629/products/USB3_1024x1024.jpg?v=1559858027" alt="24-Hour Flashdrive" name="Flashdrive" title="24-Hour Notebook Flashdrive">
+    <p class="regtext"><a class="purchase" href="#">24-Hour Notebook Flashdrive Edition</a></p></div>
+      <div class="boxshadow"> <img class="images" src="https://cdn.shopify.com/s/files/1/0602/6521/products/usb-3.0-stainless-steel-body-external-hard-disk-drive-1tb.jpg?v=1571438749" name="External Hard-Drive" title="24-Hour Notebook: External Hard-Drive Edition">
     <br>
-    <p class="regtext"><a class="purchase" href="#">24-Hour Notebook: External Hard-Drive Edition</a></p>
+    <p class="regtext"><a class="purchase" href="#">24-Hour Notebook: External Hard-Drive Edition</a></p></div>
+      
+      
+      
+      
+      </div>
+      
+    
+    
+    
+    
 
-    <form id="form" action="" https://www.freecodecamp.com/email-submit"">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
 
       <p class="regtext">
+      <br>
+      <br>
         Join the waitlist with your email for more information on upcoming products.
       </p>
-      <input type="email" id="email" class="regtext" name="email" placeholder="Your Email" required>
+      <input type="email" id="email" class="regtext" name="email" placeholder="Your Email" required> 
       <input type="submit" id="submit" value="submit" name="submit" target=" https://www.freecodecamp.com/email-submit">
-      Thank you!
-      </input>
+      <p class="main-head">
+      Thank You!
+      </p>
+      
+      
+      
+      
+      
+      
+      
+     
     </form>
 
   </div>
