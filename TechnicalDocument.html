@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* Add CSS Here */
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+</head>
+
+<body>
+    <header>
+        <h1>JavaScript Basics</h1>
+    </header>
+    <p>JavaScript is a programming language that adds interactivity
+        to your website(for example, games, responses when buttons are pressed
+        or data is entered in forms, dynamic styling, and animation...etc).
+        This article helps you get started with this exicting language and
+        gives you and idea of what is possible.
+    </p>
+
+
+    /* Should show on left side */
+
+    <nav id="navbar">
+        <header> Placeholder </header>
+        <a class="navlink' href=" #placeholder></a>
+        <a class="navlink' href=" #header></a>
+        <a class="navlink' href=" #header></a>
+        <a class="navlink' href=" #header></a>
+        <a class="navlink' href=" #header></a>
+    </nav>
+
+
+    /* 10p 5li 5code */
+
+    <main id="main">
+        <section class="main-section">
+            <header id="What is JavaScript, really?">
+                <h2>What is JavaScript, really?</h2> </header>
+            <p>JavaScript ("JS" for short) is a full-fledged dynamic programming language that, when applied to an HTML
+                document, can provide dynamic interactivity on websites. It was invented by Brendan Eich, co-founder of
+                the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation.
+
+                JavaScript is incredibly versatile and beginner friendly. With more experience, you'll be able to create
+                games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!
+
+                JavaScript itself is fairly compact yet very flexible. Developers have written a large variety of tools
+                on top of the core JavaScript language, unlocking a vast amount of extra functionality with minimum
+                effort. These include:</p>
+
+            <ul>
+                <li>Browser Application Programming Interfaces (APIs) — APIs built into web browsers, providing
+                    functionality like dynamically creating HTML and setting CSS styles, collecting and manipulating a
+                    video stream from the user's webcam, or generating 3D graphics and audio samples.</li>
+                <li>Third-party APIs — Allow developers to incorporate functionality in their sites from other content
+                    providers, such as Twitter or Facebook.</li>
+                <li>Third-party frameworks and libraries — You can apply these to your HTML to allow you to rapidly
+                    build up sites and applications.</li>
+            </ul>
+
+            <p>Because this article is only supposed to be a light introduction to JavaScript, we are not going to
+                confuse you at this stage by talking in detail about what the difference is between the core JavaScript
+                language and the different tools listed above. You can learn all that in detail later on, in our
+                JavaScript learning area, and in the rest of MDN.<br>
+                Below we will introduce you to some aspects of the core language, and you'll also play with a few
+                browser API features too. Have fun!</p>
+        </section>
+
+
+        <section class="main-section">
+            <header id="A Hello world! example"> <h2>A "Hello world!" example</h2> </header>
+            <p>The above section might sound really exciting, and so it should — JavaScript is one of the most lively
+                web technologies today, and as you start to get good at using it, your websites will enter a new
+                dimension of power and creativity.
+
+                However, becoming comfortable with JavaScript is a little harder than becoming comfortable with HTML and
+                CSS. You may have to start small and keep working in small consistent steps. To start, we'll show how to
+                add some basic JavaScript to your page, creating a "Hello world!" example (the standard in basic
+                programming examples).</p>
+            <ol>
+                <li>First, go to your test site and create a new folder named scripts. Then, within the new scripts
+                    folder you just created, create a new file called main.js. Save it in your scripts folder.</li>
+                <li>Next, in your <code>index.html</code> file enter the following element on a new line just before the
+                    closing
+                    <code>/body</code> tag: <br>
+                    <code> script src="scripts/main.js" /script </code></li>
+                <li>This is basically doing the same job as the <code> link </code> element for CSS — it applies the
+                    JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else
+                    on the page).
+                </li>
+                <li>Now add the following code to the <code>main.js</code> file:
+                    <code>const myHeading = document.querySelector('h1');
+                    myHeading.textContent = 'Hello world!';
+                </code>
+                </li>
+                <li>Finally, make sure the HTML and JavaScript files are saved, then load index.html in the browser. You
+                    should see something like the following:</li>
+            </ol>
+
+            <p>Your heading text has now been changed to "Hello world!" using JavaScript. You did this by first using a
+                function called <code>querySelector()</code> to grab a reference to your heading, and store it in a
+                variable called
+                <code>myHeading</code>. This is very similar to what we did using CSS selectors. When you want to do
+                something to an
+                element, you need to select it first.
+
+                After that, you set the value of the <code>myHeading</code> variable's <code>textContent</code> property
+                (which represents the
+                content of the heading) to "Hello world!".</p>
+
+        </section>
+
+
+
+        <section class="main-section">
+            <header id="Language basics crash course">
+                Language basics crash course</header>
+
+            <p>Let's explain some of the core features of the JavaScript language, to give you a better understanding of
+                how it all works. It is worth noting that these features are common to all programming languages, so if
+                you master these fundamentals, you're well on your way to being able to program just about anything!</p>
+
+            <h3>Variables</h3>
+            <p>Variables are containers that you can store values in. You start by declaring a variable with the
+                <code>var</code>
+                (less recommended, dive deeper for the explanation) or the let keyword, followed by any name you want to
+                call it:<code> let myVariable; </code></p> <br>
+
+            <p>After declaring a variable, you can give it a value:
+                <code>myVariable = 'Bob';</code><br>
+                You can do both of these operations at the same time:
+                <code>let myVariable = 'Bob';</code>
+                <code>myVariable = 'Steve' ;</code>
+
+                <p>Note that variables may hold values that have different data types.</p>
+            </p>
+
+
+
+
+
+
+        </section>
+
+
+
+        <section class="main-section">
+            <header id="Supercharging our example website"> <h2>Supercharging our example website</h2> </header>
+            <p>Now we've gone over a few JavaScript basics, let's add a few cool features to our example site to see
+                what is possible.</p>
+
+            <h3>Adding an image changer</h3>
+            <p>In this section, we'll add an additional image to our site using some more DOM API features, using some
+                JavaScript to switch between the two when the image is clicked.</p>
+            <ol>
+                <li>First of all, find another image you'd like to feature on your site. Be sure it is the same size as
+                    the first image, or as close as possible.</li>
+                <li>Save this image in your <code>images</code> folder.</li>
+                <li>Go to your <code>main.js</code> file, and enter the following JavaScript. (If your "Hello world!"
+                    JavaScript is still there, delete it.)</li>
+                <li>Save all files and load <code>index.html</code> in the browser. Now when you click the image, it
+                    should change to the other one!</li>
+            </ol>
+
+            <p>You store a reference to your <code>img</code> element in the <code>myImage</code> variable. Next, you
+                make this variable's
+                <code>onclick</code> event handler property equal to a function with no name (an "anonymous" function).
+                Now, every
+                time this element is clicked:</p>
+
+            <ol>
+                <li>You retrieve the value of the image's <code>src</code> attribute.</li>
+                <li>You use a conditional to check whether the src value is equal to the path to the original image:
+                </li>
+                <ol>
+                    <li>If it is, you change the <code>src</code> value to the path to the 2nd image, forcing the other
+                        image to be loaded inside the <code>img</code> element.</li>
+                    <li>If it isn't (meaning it must already have changed), the <code>src</code> value swaps back to the
+                        original
+                        image path, to the original state.</li>
+                </ol>
+            </ol>
+
+            <h3>Adding a personalized welcome message</h3>
+
+            <p>Next we will add another bit of code, changing the page's title to a personalized welcome message when
+                the user first navigates to the site. This welcome message will persist, should the user leave the site
+                and later return — we will save it using the Web Storage API. We will also include an option to change
+                the user and, therefore, the welcome message anytime it is required.</p>
+
+            <ol>
+                <li>In <code>index.html</code>, add the following line just before the <code>script</code> element:</li>
+                <br>
+                <code> button Change user /button </code>
+                <li>In <code>main.js</code>, place the following code at the bottom of the file, exactly as written —
+                    this takes
+                    references to the new button and the heading, storing them inside variables:</li><br>
+                <code>let myButton = document.querySelector('button');
+                        let myHeading = document.querySelector('h1');</code>
+                <li>Now add the following function to set the personalized greeting — this won't do anything yet, but
+                    we'll fix this in a moment:</li><br>
+                <code>function setUserName() {
+                    let myName = prompt('Please enter your name.');
+                    localStorage.setItem('name', myName);
+                    myHeading.textContent = 'Mozilla is cool, ' + myName;
+                  }</code>
+                <p>This function contains a <code>prompt()</code> function, which brings up a dialog box, a bit
+                    like<code> alert()</code>. This
+                    <code>prompt()</code>, however, asks the user to enter some data, storing it in a variable after the
+                    user presses
+                    OK. In this case, we are asking the user to enter their name. Next, we call on an API called
+                    <code>localStorage</code>, which allows us to store data in the browser and later retrieve it. We
+                    use
+                    <code>localStorage</code>>'s <code>setItem()</code> function to create and store a data item called
+                    <code>'name'</code>, setting its value
+                    to the <code>myName</code> variable which contains the data the user entered. Finally, we set the
+                    <code>textContent</code> of
+                    the heading to a string, plus the user's newly stored name.</p>
+                <li>Next, add this if ... else block — we could call this the initialization code, as it structures the
+                    app when it first loads:</li><br>
+                <code>if(!localStorage.getItem('name')) {
+                        setUserName();
+                      } else {
+                        let storedName = localStorage.getItem('name');
+                        myHeading.textContent = 'Mozilla is cool, ' + storedName;
+                      }</code>
+                <p>This block first uses the negation operator (logical NOT, represented by the !) to check whether the
+                    <code>name</code>> data exists. If not, the <code>setUserName()</code> function is run to create it.
+                    If it exists (that is, the
+                    user set it during a previous visit), we retrieve the stored name using <code>getItem()</code> and
+                    set the
+                    textContent of the heading to a string, plus the user's name, as we did inside
+                    <code>setUserName()</code>.</p>
+                <li>Finally, put the below <code>onclick</code> event handler on the button. When clicked, the
+                    <code>setUserName()</code> function
+                    is run. This allows the user to set a new name, when they wish, by pressing the button:</li><br>
+                <code>myButton.onclick = function() {
+                        setUserName();
+                      }</code>
+            </ol>
+
+            <h3>A user name of null?</h3>
+            <p>When you run the example and get the dialog box that prompts you to enter your user name, try pressing
+                the <i>Cancel</i> button. You should end up with a title that reads "Mozilla is cool, null". This is
+                because
+                when you cancel the prompt, the value is set as <code>null</code>, a special value in JavaScript that
+                basically
+                refers to the absence of a value.</p><br>
+            <p>Also try just pressing OK without entering any name — you should end up with a title that reads "Mozilla
+                is cool,", for fairly obvious reasons.</p>
+            <p>you wanted to avoid these problems, you could check that the user hasn't entered <code>null</code> or a
+                blank name by
+                updating your <code>setUserName()</code> function to this:</p><br>
+            <code>function setUserName() {
+                    let myName = prompt('Please enter your name.');
+                    if(!myName || myName === null) {
+                      setUserName();
+                    } else {
+                      localStorage.setItem('name', myName);
+                      myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+                    }
+                  }</code>
+            <p>In human language — if has <code>myName</code> no value, or its value is <code>null</code>, run
+                <code>setUserName()</code> again from the start.
+                If it does have a value (if the above statements are not true), then store the value in
+                <code>localStorage</code> and
+                set it as the heading's text.</p>
+
+        </section>
+
+
+
+        <section class="main-section">
+            <header id="Conclusion"><h2>Conclusion</h2> </header>
+
+            <p>If you have followed all the instructions in this article, you should end up with a page that looks
+                something like this (you can also view our version here):
+                <img src="https://mdn.mozillademos.org/files/9539/website-screen-scripted.png">
+                If you get stuck, you can compare your work with our finished example code on GitHub.
+
+                We have barely scratched the surface of JavaScript. If you have enjoyed playing, and wish to advance
+                even further see the further resources below.
+            </p>
+        </section>
+
+
+
+    </main>
+
+</body>
+
+</html>
