@@ -24,17 +24,37 @@
 			background: var(--color-secondary);
 		}
 		
+		img{
+			width: 40rem;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: auto;
+		}
+		
 		main{
-			margin-left: 7rem;
+			margin-left: 6rem;
 			padding: 5rem;
 			transition: margin-left .5s;
 		}
 		
+		p{
+			line-height: 3rem;
+			text-indent: 5rem;
+			margin-bottom: 3rem;
+		}
 			.header-border{
 		 font-family: var(--content-font);
 		 border: .20rem solid #000000;
 		 text-align: var(--main-alignment);
 		 font-size: 1.5rem; 
+		}
+		
+		.blog-title{
+			font-size: 5rem;
+		}
+		
+		.article-title{
+			font-size: 3rem;
 		}
 
 
@@ -96,10 +116,13 @@
 	position: fixed;
 }
 
-/* Idea for Text Border 
+ /* Idea for Text Border */
 .content{
-padding: 4px;
-border: 1px solid black;
-margin: 70px;
+border: .2rem solid black;
 }
-*/
+
+/* Images */
+.image-container{
+	display: flex;
+	align-items: center;
+}
