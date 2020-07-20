@@ -39,7 +39,7 @@
 		
 		p{
 			line-height: 3rem;
-			text-indent: 5rem;
+			text-indent: 2rem;
 			margin-bottom: 3rem;
 		}
 			.header-border{
@@ -116,7 +116,7 @@
 	position: fixed;
 }
 
- /* Idea for Text Border */
+ /* Text Border */
 .content{
 border: .2rem solid black;
 }
