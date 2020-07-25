@@ -60,7 +60,7 @@
 
 /* The side navigation menu */
 .sidenav {
-  height: 50%; 
+  height: 55%; 
   width: 0; /* Change via navbarScript */
   position: fixed; 
   z-index: 1;
@@ -119,6 +119,7 @@
  /* Text Border */
 .content{
 border: .2rem solid black;
+margin-bottom: 3rem;
 }
 
 /* Images */
